@@ -41,19 +41,19 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('https://files.catbox.moe/2tpikd.jpg');
+  background-image: url('https://scontent.fmnl13-2.fna.fbcdn.net/v/t1.15752-9/s2048x2048/199039286_815090982465730_8359690675779523869_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=ae9488&_nc_ohc=VwC5x1pBOjQAX_jorw1&_nc_ht=scontent.fmnl13-2.fna&tp=7&oh=35770ea11570204d7c6a1e3c83154cfb&oe=60CDB2DF');
   min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url("https://files.catbox.moe/dny1du.jpg");
+  background-image: url("https://scontent.fmnl13-1.fna.fbcdn.net/v/t1.15752-9/s2048x2048/201938367_223647952710550_6445090180518706888_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=ae9488&_nc_ohc=KSBITrTsBkQAX_JYY7d&tn=8fxKlwiRsqMTR3xn&_nc_ht=scontent.fmnl13-1.fna&tp=7&oh=203036056e99770ade5ac72e083467fe&oe=60CDC313");
   min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("https://files.catbox.moe/f66ce5.jpg");
+  background-image: url("https://scontent.fmnl13-2.fna.fbcdn.net/v/t1.15752-9/s2048x2048/198666330_197794568777554_6697466594917819356_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=ae9488&_nc_ohc=KUmNnjaB1SkAX_vNIX-&_nc_ht=scontent.fmnl13-2.fna&tp=7&oh=a793d0e9129b56554f8230e9b99ab1a2&oe=60CDBF19");
   min-height: 400px;
 }
 
