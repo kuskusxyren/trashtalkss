@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<title>#TRASHTALKS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="https://files.catbox.moe/m6epjj.png" type="image/x-icon">
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <nav class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a style="color:black" href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a style="color:black" href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user-circle"></i> ABOUT</a>
+    <a style="color:black" href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-picture-o"></i> INFOGRAPHIC</a>
+    <a style="color:black" href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-link"></i> LINKS</a>
+	<a style="color:black" href="#vlog" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-video-camera"></i> VLOG</a>
+	<a style="color:black" href="#blog" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-pencil"></i> BLOG</a>
+	<a style="color:black" href="#community" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-group"></i> COMMUNITY</a>
+  </nav>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">INFOGRAPHIC</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">LINKS</a>
+	<a href="#vlog" class="w3-bar-item w3-button" onclick="toggleFunction()">VLOG</a>
+	<a href="#blog" class="w3-bar-item w3-button" onclick="toggleFunction()">BLOG</a>
+	<a href="#community" class="w3-bar-item w3-button" onclick="toggleFunction()">COMMUNITY</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">&nbsp;#TRASHTALKS&nbsp;</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT</h3>
+  <p class="w3-center"><em>Mission</em></p>
+  <p class="just">Our goal is to help our community by working with neighbors and local leaders to create a better environment for future generations to live and work in. We want to ensure the environmental health and well-being of the community while also safeguarding the social, economic, and ecological health of the area. We primarily focus on remediation of contaminated ecological conditions in canal systems and drainages.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding">
+      <img src="https://files.catbox.moe/m6epjj.png" alt="Trashtalks Logo" width="100%" height="100%">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding">
+	<p class="w3-center"><em>Vision</em></p>
+      <p class="just">We have made a long-term commitment to helping improve the environment so that it may support the area's social growth and security, while at the same time ensuring that the environment will last into the future. Furthermore, taking care of the environment will help the community prosper and become more united due to the people working together with a similar goal in mind. Given the current situation we have right now it is necessary to have social interactions and help each other in the midst of the times.&nbsp;</p><br>
+    </div>
+	  <p class="w3-center"><em>Environmental Conservation Organization <br> Nonprofit Organization</em></p>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="portfolio">
+  <div class="w3-display-middle">
+    <span style="color:black" class="w3-xxlarge w3-wide">INFOGRAPHIC</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <p class="w3-center"><em>Here are some examples of bad irrigation<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+	<div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+		<p>Trash Talk Time</p>
+      <img src="https://files.catbox.moe/ggjbze.png" onclick="onClick(this)" class="w3-hover-opacity crop" alt="Trash Talk Time">
+    </div>
+
+    <div class="w3-col m3">
+		<p>Water Pollution</p>
+      <img src="https://files.catbox.moe/ldbhf7.jpg" onclick="onClick(this)" class="w3-hover-opacity crop" alt="Water Pollution">
+    </div>
+
+    <div class="w3-col m3">
+		<p>What is Irrigation?</p>
+      <img src="https://files.catbox.moe/kbduj7.jpg" onclick="onClick(this)" class="w3-hover-opacity crop" alt="What is Irrigation?">
+    </div>
+
+    <div class="w3-col m3">
+		<p>What Exactly is Recycling?</p>
+      <img src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t1.6435-9/198254941_114345277529401_780562256736958680_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=730e14&_nc_ohc=eKJhQNtvgLsAX86BxG3&_nc_ht=scontent.fmnl13-2.fna&oh=b30c7432d4e4668f8e30c962b46f17fc&oe=60CDED95" onclick="onClick(this)" class="w3-hover-opacity crop" alt="What Exactly is Recycling?">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center">
+	  <p>Photo Gallery&nbsp;</p>
+    <div class="w3-col m3">
+      <img src="https://files.catbox.moe/61c941.jpg" width="100%" height="110" onclick="onClick(this)" class="w3-hover-opacity" alt="Trash in the gutter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://files.catbox.moe/4wbcc6.jpg" width="100%" height="110"  onclick="onClick(this)" class="w3-hover-opacity" alt="All kinds of trash thrown anywhere">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://files.catbox.moe/z1dxzq.jpg" width="100%" height="110" onclick="onClick(this)" class="w3-hover-opacity" alt="Trash in the river">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://files.catbox.moe/xbujzs.jpg" width="100%" height="110" onclick="onClick(this)" class="w3-hover-opacity" alt="Trash that are not taken care of">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="https://files.catbox.moe/xlmfe4.jpg" width="100%" height="110" onclick="onClick(this)" class="w3-hover-opacity" alt="River becoming green due to the trash">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://files.catbox.moe/dfjuyg.jpg" width="100%" height="110" onclick="onClick(this)" class="w3-hover-opacity" alt="Trash island">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://files.catbox.moe/5lii6f.jpg" width="100%" height="110" onclick="onClick(this)" class="w3-hover-opacity" alt="Homes beside the river ignorant of the trash destroying the environment">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://files.catbox.moe/2zlfjt.jpg" width="100%" height="110" onclick="onClick(this)" class="w3-hover-opacity" alt="Trash gathering up stench">
+    </div>
+  </div>
+	<div class="w3-center">
+		<p>Video Playlist of Trash</p>
+		<a href="https://www.youtube.com/watch?v=wNBMY1aOqsI&list=PLjBLMMTCDQR28AFdmYc61gElJNLW6R9PJ" target="_blank"><img src="https://files.catbox.moe/f0x59x.png" width="100%" height="100%"></a>
+	</div>
+	
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min" id="contact">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-black w3-wide">LINKS</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">Please visit our page!</h3>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      
+    </div>
+    <div class="m8 w3-panel">
+      <div class="w3-large w3-margin-bottom w3-center">
+        <a href="https://www.google.com/maps/place/Manila,+Metro+Manila/data=!4m2!3m1!1s0x3397ca03571ec38b:0x69d1d5751069c11f?sa=X&ved=2ahUKEwisj5n17OvwAhUNfXAKHezrBKoQ8gEwAHoECAcQAQ" class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right" target="_blank"></a><a href="https://www.google.com/maps/place/Manila,+Metro+Manila/data=!4m2!3m1!1s0x3397ca03571ec38b:0x69d1d5751069c11f?sa=X&ved=2ahUKEwisj5n17OvwAhUNfXAKHezrBKoQ8gEwAHoECAcQAQ" target="_blank">Manila, Philippines</a><br>
+		<a href="https://www.facebook.com/trashtalk.plm2021/" class="fa fa-facebook-official w3-xlarge w3-margin-right" target="_blank"></a><a href="https://www.facebook.com/trashtalk.plm2021/" target="_blank">#trashtalks facebook page</a><br>
+		<a class="fa fa-phone w3-xlarge w3-margin-right" target="_blank"></a><a>09610602953</a><br>
+		<a href="https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcRwPkVKRHPnVTFRvkkmBbQcRrWlxpnfScqcsdtCxJkBstdjDTtZkdhQxVBLHmxTnvrNBQbSC" class="fa fa-envelope w3-xlarge w3-margin-right" target="_blank"></a><a href="https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcRwPkVKRHPnVTFRvkkmBbQcRrWlxpnfScqcsdtCxJkBstdjDTtZkdhQxVBLHmxTnvrNBQbSC" target="_blank">trashtalk913@gmail.com</a><br>
+      </div>
+      
+		<!-- Image of location/map -->
+    <img src="https://files.catbox.moe/oi1g01.png" class="m8 w3-panel w3-image" style="width:400%;margin-top:48px">
+    </div>
+  </div>
+</div>
+	<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="vlog">
+  <div class="w3-display-middle">
+    <span style="color:black" class="w3-xxlarge w3-wide">VLOG</span>
+  </div>
+</div>
+	<div class="w3-content w3-container w3-padding-64">
+	<a href="https://www.youtube.com/watch?v=ySWgLPgTCKg" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAAAA1BMVEUAAACnej3aAAAASElEQVR4nO3BMQEAAADCoPVPbQhfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeA8XKAAFZcBBuAAAAAElFTkSuQmCC" width="100%" height="100%"></a> </div>
+	
+<div class="w3-content w3-container w3-padding-64" id="blog">
+  <h3 class="w3-center">BLOG 1: Trash Talk Time!</h3>
+  <p class="just w3-padding-large">Have some trash talk with us! Garbage doesn't go away, so don't believe everything you see. All of our rubbish stays on Earth in one of the following four places: the atmosphere, the ocean, landfills, or recycled. And there is a lot of rubbish that gets made. There are around ten trucks on the road for every one hauling rubbish. That is correct, only one in ten trucks are employed to move rubbish. The worldwide challenge of solid waste management impacts everyone on the planet.<br><br>Wastes improperly managed are polluting the world's oceans, causing sewers to back up, and flooding cities. It could spread infections, injure animals that consume trash, and impair the economy in areas such as tourism. This situation is only going to become worse until immediate action is taken.</p>
+  <div class="w3-row align">
+    <div class="w3-col m6 w3-padding-large">
+      <p class="just">“There is no point in having a nice house if you can't afford a livable planet to put it on” said by Henry David Thoreau. Garbage should be well understood.<br><br>RAPID URBANIZATION, POPULATION GROWTH, AND ECONOMIC DEVELOPMENT will need an increase in worldwide garbage creation by 70% over the next three decades. About 90% of waste in low-income nations is poorly managed: Either it is openly dumped or burned. Plastic waste is a massive problem; it is very difficult and complex.<br><br>Additionally, there has been a rise in garbage, but global movement has also developed to seek solutions for stemming the flood and to make trash management more sustainable. It is also part of the solution to provide solid waste statistics and planning.<br><br>To successfully reverse that tendency, we already know what has to be done. Everyone, from the street to the government, needs to become more active. Every individual has a stake in sustainable waste management. Come and join us to start the action now!
+</p>
+    </div>
+	  <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="https://cdn.fbsbx.com/v/t59.2708-21/199697198_156760393161153_2886950756440298416_n.gif?_nc_cat=107&fallback=1&ccb=1-3&_nc_sid=041f46&_nc_ohc=mhKlFyyPM-AAX9fS0af&_nc_oc=AQlGAJnE1TE3E_RlR8YvNXT3bMJK7QYn7988o8D_05ijvWDDAj0TymuMxQgsxqQzIT3Tfx_ymUtSciA8pqIpwAHW&_nc_ht=cdn.fbsbx.com&oh=6cc3d84995edee6a484872475482bf34&oe=60C9EAF9" class="w3-round w3-image" alt="Photo of Me">
+    </div>
+  </div>
+</div>
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">BLOG 2: Let's Recycle!</h3>
+  <p class="just w3-padding-large">What exactly is recycling? Recycling, in other words, reusing things that have already been used is recycling. Many people use the term converting garbage into a new product when referring to recycling. Maintaining the environment is one of the main advantages of recycling.<br><br>Recycling materials can lead to environmental sustainability reusing materials that are already available reduces waste, promotes conservation, conserves energy, and minimizes the environmental effect of making new products. To recycle waste is key to determining city, community, and national identity. When it comes to a city's well-being, one with an effective and well-designed recycling system is respected above one that pollutes its surrounds.
+</p>
+  <div class="w3-row align">
+	  <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="https://cdn.fbsbx.com/v/t59.2708-21/199343561_1546029922409301_761225493564934769_n.gif?_nc_cat=110&fallback=1&ccb=1-3&_nc_sid=041f46&_nc_ohc=gwP5hmA8WZwAX8JBapA&_nc_ht=cdn.fbsbx.com&oh=a24cd3d7cd01e19268e26c4d2bc070b1&oe=60C9AB00" class="w3-round w3-image" alt="Photo of Me">
+    </div>
+	  <div class="w3-col m6 w3-padding-large">
+      <p class="just">“When recycling and sustainability are embraced by the majority, it is critical to stress how it affects sustainability. Sustainability is grounded in recycling since it helps to keep items out of landfills. It's good for the environment since it reduces pollution in ecosystems by, for example, recycling plastics and metals. As a result, the area that was previously contaminated can be reused for other reasons.<br><br>Why must you be involved? Everyone must be active since the concept of recycling and the role it plays in environmental improvement necessitates participation from everybody. The main thing is that people understand the advantages of recycling and that they do their part to make recycling more widespread. As you may have noted, to help, consider reducing the volume of your garbage and using recycled items where possible. No matter how tiny your effort, it contributes to a sustainable society.
+	</p>
+    </div>
+  </div>
+</div>
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">BLOG 3: The Truth About Irrigation</h3>
+  <p class="just w3-padding-large">CAN YOU EXPLAIN WHAT IRRIGATION IS? Irrigation is the process of watering crops by bringing in water through pipelines, canals, sprinklers, or other man-made sources, rather than relying solely on rainfall.<br><br>Without irrigation, agriculture would be impossible to sustain in areas with seasonal rainfall patterns. Drought-prone areas benefit from irrigation because it promotes crop growth and quality while reducing crop losses. It also helps to provide more predictable food supplies by allowing farmers to cultivate crops on a steady timetable than would otherwise be possible.
+</p>
+  <div class="w3-row align">
+    <div class="w3-col m6 w3-padding-large">
+      <p class="just">Drought-resistant irrigation canals are the primary streams that transport irrigation water from a water source to the areas that need to be irrigated. They can be lined with concrete, brick, or stone, or they can be lined with a flexible membrane to keep seepage and erosion from occurring.<br><br>An open canal, channel, or ditch is a waterway that is open to the public and whose purpose is to transport water from one location to another. Main waterways that deliver water to one or more farms are referred to as channels and canals. Field ditches are smaller in size and are used to transport water from the farm entrance to the irrigated fields on the farm.
+</p>
+    </div>
+	  <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="https://cdn.fbsbx.com/v/t59.2708-21/196284226_1098344933987260_6035088836626618099_n.gif?_nc_cat=107&fallback=1&ccb=1-3&_nc_sid=041f46&_nc_ohc=aZVg0l7jUssAX-6-n1x&_nc_ht=cdn.fbsbx.com&oh=3252e47cd56d1301c8ba2ee2e475852f&oe=60CA1E70" class="w3-round w3-image" alt="Photo of Me">
+    </div>
+  </div>
+</div>
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">BLOG 4: Operation, Save the Water Against Pollution</h3>
+  <p class="just w3-padding-large">POLLUTION OF WATER IN THE PHILIPPINES. The Philippines is a developing country that has seen a tremendous increase in urbanization and industrialization. As a result of the country's fast-growing population in recent years. Unfortunate events occur quickly. Although this rapid expansion has resulted in increased water contamination, only 47 percent of all examined water bodies in the country have high water quality, indicating that the country is on the right track. The water quality in 40 percent of the households is just fair, and the water quality in 13 percent is poor. The quality of water bodies in the PH is good in 47 percent of cases. 40 percent of the water is of GOOD QUALITY, whereas 13 percent is of POOR QUALITY.<br><br>Environmental action groups, industry, and residents in the Philippines must collaborate on more initiatives in order to avert the approaching water catastrophe that is expected to afflict the region in the not-too-distant future, according to government officials.
+
+</p>
+  <div class="w3-row align">
+	  <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="https://cdn.fbsbx.com/v/t59.2708-21/197072045_143756937819113_8039230211443869558_n.gif?_nc_cat=106&fallback=1&ccb=1-3&_nc_sid=041f46&_nc_ohc=bGcKWoy-SJoAX_mlnN1&_nc_ht=cdn.fbsbx.com&oh=d5d0ee7e87c6f51b8f0ee5add5a4df5f&oe=60C9AE99" class="w3-round w3-image" alt="Photo of Me">
+    </div>
+	  <div class="w3-col m6 w3-padding-large">
+      <p class="just">The following is a quote from Mohammed Khalid “Because to a lack of sufficient and adequate sewage treatment infrastructure in the Philippines, only around 10 percent of the sewage is correctly processed.<br><br>Please share your thoughts on water pollution in the Philippines in the comments section below!<br><br>Depending on the pollutant, it can have a variety of hazardous and negative impacts on human health and the environment, resulting in significant economic expenses for both the general public and government institutions.<br><br>Water is essential for human survival. That is a proven fact. Trash and chemicals, on the other hand, can find their way into the seas and lakes. This is referred to as water contamination. They can have a negative impact on fish and other marine species, but when contaminants enter the water, they can have a devastating effect on the water cycle.
+	</p>
+    </div>
+  </div>
+</div>
+	
+	
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min" id="community">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-black w3-wide">COMMUNITY</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">Please visit the pages of the community!</h3>
+	<p class="w3-center"><em>Below the logos are links to their facebook page and website</em></p>
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      
+    </div>
+    <div class="m8 w3-panel">
+      
+		<div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="https://files.catbox.moe/q2jntv.png" width="100%" onclick="onClick(this)" class="w3-hover-opacity" alt="#LigtasNaBalikEskwela #AksyonParaSaDekalidadNaEdukasyon"><br><br>
+		<a href="https://www.facebook.com/ite.edukaksyon/" class="fa fa-facebook-official w3-xlarge w3-margin-right" target="_blank"></a><a href="https://www.facebook.com/PLM.Haribon" target="_blank"></a>
+		<a href="https://www.facebook.com/PLM.Haribon" class="fa fa-link w3-xlarge w3-margin-right" target="_blank"></a><br><br>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://files.catbox.moe/rwu5v7.png" width="100%" onclick="onClick(this)" class="w3-hover-opacity" alt="All kinds of trash thrown anywhere"><br><br>
+		<a href="https://www.facebook.com/PLM.Haribon" class="fa fa-facebook-official w3-xlarge w3-margin-right" target="_blank"></a><a href="https://www.facebook.com/PLM.Haribon" target="_blank"></a>
+		<a href="https://www.wix.com/feedback-ng/feedback/07aa9c0e-b46c-41c8-8877-9ff2d26ecee6" class="fa fa-link w3-xlarge w3-margin-right" target="_blank"></a><br><br>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://files.catbox.moe/a2rypu.png" width="100%" onclick="onClick(this)" class="w3-hover-opacity" alt="PUSO PARA SA PUSO is a campaign for promoting the adoption of stray cats and dogs and to let everyone realize the value of their lives. Just as they honor us, so should we too with care and respect. PAW-er PAW-rever!"><br><br>
+		<a href="https://www.facebook.com/pusoparasapuso/" class="fa fa-facebook-official w3-xlarge w3-margin-right" target="_blank"></a><a href="https://www.facebook.com/PLM.Haribon" target="_blank"></a>
+		<a href="https://pusoparasapuso.wixsite.com/ppspuso?fbclid=IwAR3Eb2i3ko-NIIH-RZulY3opWlogyRwWEHw6D87oznkGk94lFs3C4bEUUM0" class="fa fa-link w3-xlarge w3-margin-right" target="_blank"></a><br><br>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://files.catbox.moe/f8zvwy.png" width="100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Our lives have been drastically changed as we opened 2020 with a pandemic crisis. We have spent the entire year locking ourselves within the comfort of four walls our own households could provide. And up to this date, the foregoing crisis continue to hinder the old normal we were all used to. 
+We share the same struggles — but not to the same extent. Despite of any kind of job that a person has, it became into a life-threatening one because of the ongoing pandemic. Not everyone have the luxury to stay-at-home; not everyone have the privilege to adjust and conform to the new normal. Some people need to risk themselves in order to survive. Ironic, isn't it? Thus, thousands of people were recorded violating the minimum health standards imposed by the government. 
+There has been a minimum progress that our country is making in this fight. An amount of collective effort is needed to overcome this pandemic, alongside with the socio-economic crisis. It is a high-time that we take this fight more serious than ever. "><br><br>
+		<a href="https://www.facebook.com/virulesandyou" class="fa fa-facebook-official w3-xlarge w3-margin-right" target="_blank"></a><a href="https://www.facebook.com/PLM.Haribon" target="_blank"></a>
+		<a href="https://virules.jimdosite.com/?fbclid=IwAR3NnBcvKJgjlf3ktB78ZNungX2YterACwdrBJQe_vP9zQsw0SUQmDKJb6M" class="fa fa-link w3-xlarge w3-margin-right" target="_blank"></a>
+    </div>
+ 	 </div>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
